@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior:auto
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-image: url('./media/backgroundimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    margin-top: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    
+}
+
+.font1{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navbar-links a:hover{
+    background-color:white;
+}
+
+.side-navbar{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    padding: 10%;
+    color: azure;
+    display: none;
+	transition:all 5s;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+	transition:0.5s;
+    
+
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+ 
+.header{
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 20%;
+    
+}
+.head{
+ justify-content: center;
+ padding-left: 20%;
+}
+
+.Services{
+    padding: 20px;
+    background-color: cornflowerblue;
+}
+.Service-container{
+    padding-bottom: 5%;
+}
+.Service-images{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Service-images img{
+	border-radius:20px;
+}
+.Service-para{
+padding-left: 15%;
+font-size: 20px;
+font-weight: bold;
+}
+
+.p1{
+   font-size: 25px;
+   flex-wrap: wrap;
+   color: white;
+   justify-content: center;
+   font-weight: bold;
+padding-top: 15px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.p2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.products{
+    background-color: cornflowerblue;
+}
+.products-container{
+    padding-top: 5%;
+    padding-bottom: 10px;
+}
+.products-images{
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px;
+    justify-content: space-around;
+    padding-top: 20px;
+    border-radius: 15%;
+}
+.side-navbar i{
+	cursor:pointer;
+}
+.side-navbar-links p a:hover{
+	color:red;
+}
+.brands{
+   gap: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-left: 5%;
+  
+}
+.book{
+    background-color: mediumaquamarine;
+    display: inline-block;
+    border: 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    
+}
+.font{
+    font-size: 20px;
+ 
+    padding-bottom: 10%;
+    padding-top: 10%;
+   
+}
+.book2{
+ padding-bottom: 10Px;
+ padding-top: 5%;
+}
+
+
+.footer{
+    display: flex;
+    font: 25px;
+    padding-top: 30px;
+    padding-left: 20px;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.p3,.p4{
+    width: 300px;
+    font-size: 20px;
+    padding-top: 5%;
+}
+.p5{
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+.Service-images{
+    object-fit: cover;
+    border-radius: 10px; 
+    border: 2px;
+    transition: all ease-in-out 0.5s;
+}
+.Service-images img:hover{
+    width: 25%;
+}
+
+
+.navbar-menu-toggle{
+    display: none;
+}
+@media screen  and (max-width:600px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display:none;
+    }
+}
