@@ -210,6 +210,9 @@ padding-top: 15px;
     .navbar-links{
         display: none;
     }
+    .navbar-links a{
+	        font-size: 10px;
+    }
     .header-image{
         display:none;
     }
